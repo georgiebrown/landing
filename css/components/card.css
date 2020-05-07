@@ -1,0 +1,31 @@
+.card-container{
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+  flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    padding: 20px;
+    transition: 0.3s;
+    background: white;
+    margin: 20px;
+    background-image: linear-gradient(90deg,#000 50%,transparent 0),linear-gradient(90deg,#000 50%,transparent 0),linear-gradient(180deg,#000 50%,transparent 0),linear-gradient(180deg,#000 50%,transparent 0);
+    background-position: 0 0,0 100%,0 0,100% 0;
+    background-repeat: repeat-x,repeat-x,repeat-y,repeat-y;
+    background-size: 30px 1px,30px 1px,1px 30px,1px 30px;
+    animation: .4s infinite normal a;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+.card:hover{
+  cursor: crosshair;
+  animation-play-state: running;
+}
+
+.fas{
+  font-size: 40px;
+}
+
